@@ -24,5 +24,4 @@ A personal portfolio website built with **React**, **TypeScript**, **Vite**, and
 - **React Icons** – Icons library
 - **Airbnb ESLint** – Enforces consistent code style
 
-## 📂 Project Structure
 
