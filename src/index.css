@@ -215,15 +215,15 @@
       -webkit-mask-image: linear-gradient(
         150deg,
         #000 0%,
-        #000 0%,
-        transparent 8%,
+        #000 5%,
+        transparent 50%,
         transparent 100%
       );
       mask-image: linear-gradient(
         150deg,
         #000 0%,
-        #000 0%,
-        transparent 8%,
+        #000 5%,
+        transparent 50%,
         transparent 100%
       );
     }
