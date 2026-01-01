@@ -1,15 +1,17 @@
 export const ABOUT_ME = {
   name: "Luigi Jet Andrada",
-  title: "Front-End Web Developer",
+  title: "Front-End Developer",
   location: "Quezon City, PH",
   email: "andradaluigijet@gmail.com",
   description: [
-    `Hey there! 👋 I'm Luigi Jet, a front-end developer with 3 years of experience in fintech and SaaS.
-I specialize in building clean, scalable, and high-performance user interfaces for production systems that people actually use.`,
-    "Focused on clean UI development and seamless REST API integration.",
+    `Hey there! 👋 I'm Luigi Jet, a <span class="font-medium text-foreground">Front-End Developer</span> with <span class="font-medium text-foreground">3 years of experience</span> in fintech and web applications. 
+I specialize in building <span class="font-medium text-foreground">clean, scalable, and high-performance user interfaces</span> for production systems that people actually use.`,
+    // eslint-disable-next-line prettier/prettier
+    "Focused on <span class=\"font-medium text-foreground\">clean UI development</span> and <span class=\"font-medium text-foreground\">seamless REST API integration</span>.",
   ],
-  profileImage: "/profile-image.webp", // Replace with your profile image
-  profileGif: "/profile-gif.gif", // Replace with your personalised gif
+
+  profileImage: "/profile-image.webp",
+  profileGif: "/profile-gif.gif",
 };
 
 export const USER_NAMES = {
@@ -29,23 +31,25 @@ export const SOCIAL_LINKS = {
 // Contact form endpoint (update with your own Formspree endpoint)
 export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
 
-export const SKILLS = {
-  frontend: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Redux",
-    "TailwindCSS",
-    "Sass",
-    "jQuery",
-  ],
-
-  languages: ["JavaScript", "TypeScript", "PHP"],
-
-  tools: ["VS Code", "Git", "GitHub", "GitLab", "Postman", "Figma", "Vite", "Webpack"],
-};
+export const SKILLS = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Redux",
+  "TailwindCSS",
+  "Sass",
+  "jQuery",
+  "VS Code",
+  "Git",
+  "GitHub",
+  "GitLab",
+  "Postman",
+  "Figma",
+  "Vite",
+  "Laravel",
+];
 
 export const PROJECTS = [
   {

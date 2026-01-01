@@ -54,10 +54,12 @@ export default function AboutMe() {
   return (
     <section className="animate-section" id="about">
       <div className="mb-8">
-        {ABOUT_ME.description.map((para, i) => (
-          <p key={i} className="mb-4 text-[15px] sm:text-base text-muted-foreground text-justify">
-            {para}
-          </p>
+        {ABOUT_ME.description.map((desc, index) => (
+          <p
+            key={index}
+            dangerouslySetInnerHTML={{ __html: desc }}
+            className="mb-4 text-[15px] sm:text-base text-muted-foreground text-justify"
+          />
         ))}
       </div>
 
