@@ -35,6 +35,44 @@
     "Helvetica Neue", Arial;
 }
 
+@supports (view-transition-name: root) {
+  html {
+    view-transition-name: root;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+  }
+
+  ::view-transition-old(root) {
+    animation-name: theme-exit;
+  }
+
+  ::view-transition-new(root) {
+    animation-name: theme-enter;
+  }
+
+  @keyframes theme-enter {
+    from {
+      clip-path: circle(0% at var(--x) var(--y));
+    }
+    to {
+      clip-path: circle(150% at var(--x) var(--y));
+    }
+  }
+
+  @keyframes theme-exit {
+    from {
+      clip-path: circle(150% at var(--x) var(--y));
+    }
+    to {
+      clip-path: circle(0% at var(--x) var(--y));
+    }
+  }
+}
+
 @layer base {
   * {
     scroll-behavior: smooth;
@@ -56,6 +94,24 @@
     background: hsl(0, 0%, 100%);
     color: #000;
   }
+
+  /* Scrollbar Track (background) */
+  ::-webkit-scrollbar {
+    width: 5px; /* width of vertical scrollbar */
+    height: 5px; /* height of horizontal scrollbar */
+  }
+
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background)); /* track color */
+  }
+
+  /* Scrollbar Thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* thumb color */
+  }
+
+
 }
 
 @layer utilities {
@@ -171,5 +227,18 @@
         transparent 100%
       );
     }
+  }
+
+  .animate-section {
+    opacity: 0;
+    transform: translateY(5px); /* slides up into place */
+    transition:
+      opacity 0.8s ease-out,
+      transform 0.8s ease-out;
+  }
+
+  .animate-section.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

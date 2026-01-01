@@ -23,7 +23,11 @@ export default function ThemeToggle() {
   return (
     <button
       className="p-2 text-sm rounded-md bg-background box border border-border"
-      onClick={toggleTheme}
+      onClick={(e) => {
+        document.documentElement.style.setProperty("--x", `${e.clientX}px`);
+        document.documentElement.style.setProperty("--y", `${e.clientY}px`);
+        toggleTheme();
+      }}
       aria-label="Toggle theme"
     >
       {theme === "dark" ? <FiMoon size={16} /> : <FiSun size={16} />}

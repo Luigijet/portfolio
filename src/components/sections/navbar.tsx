@@ -21,9 +21,10 @@ export default function Navbar() {
   return (
     <nav className="py-5 sm:py-10">
       <div className="flex items-center justify-between">
-        {/* Logo/Brand link */}
+        {/* Logo/Brand link
+         */}
         <a href="/" className="text-lg font-semibold text-foreground">
-          LG
+          jetty.
         </a>
 
         {/* Desktop navigation menu */}

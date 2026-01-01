@@ -26,10 +26,21 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-    localStorage.setItem("theme", newTheme);
+    const applyTheme = () => {
+      const newTheme = theme === "dark" ? "light" : "dark";
+      setTheme(newTheme);
+      document.documentElement.classList.toggle("dark", newTheme === "dark");
+      localStorage.setItem("theme", newTheme);
+    };
+
+    if (!document.startViewTransition) {
+      applyTheme();
+      return;
+    }
+
+    document.startViewTransition(() => {
+      applyTheme();
+    });
   };
 
   return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
