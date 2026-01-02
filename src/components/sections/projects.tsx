@@ -2,22 +2,16 @@ import { ExternalLink, Github } from "lucide-react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 
 import { PROJECTS } from "@/components/constants/data";
-// import Carousel from "@/components/ui/carousel";
+import Carousel from "@/components/ui/carousel";
 import Divider from "@/components/ui/divider";
 
-// const slides = [
-//   "https://picsum.photos/300/200?1",
-//   "https://picsum.photos/300/200?2",
-//   "https://picsum.photos/300/200?3",
-//   "https://picsum.photos/300/200?4",
-//   "https://picsum.photos/300/200?5",
-// ];
+const slides = ["/byb.png", "/spass.png", "/ms.png", "/byb.png", "/spass.png", "/ms.png"];
 
 export default function Projects() {
   return (
     <section className="animate-section">
       <h2 className="text-xl font-semibold mb-4">featured projects.</h2>
-      {/* <Carousel slides={slides} speed={0.5} /> */}
+      <Carousel slides={slides} speed={0.5} />
       <div className="space-y-8 mt-6">
         {PROJECTS.map((project) => (
           <div key={project.name} className="relative">

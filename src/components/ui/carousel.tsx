@@ -50,13 +50,16 @@ const Carousel: React.FC<CarouselProps> = ({ slides, speed = 0.6 }) => {
       <div className="carousel-gradient-l absolute right-0 top-0 bottom-0 z-10" />
       <div ref={trackRef} className="flex gap-4 w-max">
         {[...slides, ...slides].map((slide, index) => (
-          <div key={index} className="flex-none w-[200px] rounded-lg overflow-hidden shadow-sm">
+          <div
+            key={index}
+            className="flex-none w-[200px] rounded-lg overflow-hidden shadow-sm border"
+          >
             <img
               src={slide}
               alt="project showcase"
               loading="lazy"
               decoding="async"
-              className="block w-full pointer-events-none"
+              className="block w-full h-full pointer-events-none"
             />
           </div>
         ))}

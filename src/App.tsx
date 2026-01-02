@@ -1,5 +1,6 @@
 import useScrollReveal from "./hooks/useScrollReveal";
 import AboutMe from "@/components/sections/about-me";
+import Contact from "@/components/sections/contact";
 import Experience from "@/components/sections/experience";
 import Footer from "@/components/sections/footer";
 import Github from "@/components/sections/github";
@@ -24,7 +25,7 @@ function App() {
         <Projects />
         <Skills />
         <Github />
-
+        <Contact />
         <Footer />
       </main>
     </div>

@@ -27,7 +27,7 @@ export const SOCIAL_LINKS = {
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
-export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
+export const FORM_ENDPOINT = "https://formspree.io/f/mykzerag";
 
 export const SKILLS = [
   "HTML",
@@ -53,17 +53,25 @@ export const PROJECTS = [
   {
     name: "Blue Sky Theme Park",
     description:
-      "A modern ticket booking system that allows users to browse attractions, select ticket types, and complete reservations through a fast, responsive, and user-friendly interface.",
-    tech: [
-      "React",
-      "TypeScript",
-      "Shadcn",
-      "Motion",
-      "Tailwind CSS",
-      "Redux",
-      "Zod",
-    ],
+      "A modern ticket booking platform developed as part of a company project, enabling users to browse attractions, select ticket types, and complete reservations through a fast, responsive, and user-friendly interface.",
+    tech: ["React", "TypeScript", "Shadcn", "Motion", "Tailwind CSS", "Redux", "Zod"],
     link: "https://tickets.blueskythemepark.ph",
+    github: null,
+  },
+  {
+    name: "Bacoor City Solidarity Pass",
+    description:
+      "An online registration and access management system developed as part of a company project to help decongest traffic in Bacoor City by allowing authorized private vehicles to use designated solidarity routes.",
+    tech: ["JQuery", "CSS", "Full Calendar", "Google Maps", "Laravel"],
+    link: "https://solidarity.bacoor.gov.ph/",
+    github: null,
+  },
+  {
+    name: "Master Siomai Franchisee Management System",
+    description:
+      "An internal franchisee management system developed for Master Siomai to support franchise operations, including franchisee registration, data management, and administrative workflows. Built as part of a private company project in a professional environment.",
+    tech: ["Javascript", "CSS", "Laravel"],
+    link: null,
     github: null,
   },
 ];

@@ -3,6 +3,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { SiGithub } from "react-icons/si";
 
 import { USER_NAMES, SOCIAL_LINKS } from "@/components/constants/data";
+import Divider from "@/components/ui/divider";
 import { useTheme } from "@/context/theme-context";
 
 export default function Github() {
@@ -44,6 +45,8 @@ export default function Github() {
           </div>
         </div>
       </div>
+
+      <Divider />
     </section>
   );
 }
