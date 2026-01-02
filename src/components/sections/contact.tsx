@@ -1,4 +1,5 @@
-import { useState, ChangeEvent, FormEvent, ComponentType } from "react";
+import { useState } from "react";
+import type { ChangeEvent, FormEvent, ComponentType } from "react";
 
 import { User, Mail } from "lucide-react";
 import { FaRegCommentDots } from "react-icons/fa";
@@ -84,7 +85,9 @@ const submitForm = async (
       setFormData(FORM_CONFIG.initialData);
     } else {
       const errorData = await response.json();
-      setErrorMessage(errorData.error || "Something went wrong. Please try again.");
+      setErrorMessage(
+        errorData.error || "Something went wrong. Please try again."
+      );
       setStatus("error");
     }
   } catch {
@@ -149,7 +152,9 @@ const Contact = () => {
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -164,12 +169,15 @@ const Contact = () => {
 
       <div className="space-y-4">
         <p className="text-sm text-muted-foreground">
-          I&apos;d love to hear from you! Whether you have a question, want to discuss a project, or
-          just want to say hi, feel free to reach out using the form below.
+          I&apos;d love to hear from you! Whether you have a question, want to
+          discuss a project, or just want to say hi, feel free to reach out
+          using the form below.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4 p-2">
-          {FORM_CONFIG.fields.map((field) => renderField(field, formData, handleChange))}
+          {FORM_CONFIG.fields.map((field) =>
+            renderField(field, formData, handleChange)
+          )}
 
           <button
             type="submit"
@@ -180,7 +188,8 @@ const Contact = () => {
               "Sending..."
             ) : (
               <>
-                <span>Send Message</span> <LuMessageSquareShare className="w-4 h-4" />
+                <span>Send Message</span>{" "}
+                <LuMessageSquareShare className="w-4 h-4" />
               </>
             )}
           </button>
@@ -190,7 +199,9 @@ const Contact = () => {
               Got your message! I&apos;ll get back to you soon.
             </p>
           )}
-          {status === "error" && <p className="text-red-600 text-sm text-center">{errorMessage}</p>}
+          {status === "error" && (
+            <p className="text-red-600 text-sm text-center">{errorMessage}</p>
+          )}
         </form>
       </div>
     </section>
