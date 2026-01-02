@@ -1,5 +1,5 @@
 import { SKILLS } from "@/components/constants/data";
-
+import Divider from "@/components/ui/divider";
 const SKILL_ICONS: Record<string, string> = {
   HTML: "html",
   CSS: "css",
@@ -98,6 +98,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
+      <Divider />
     </section>
   );
 };

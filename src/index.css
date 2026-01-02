@@ -110,8 +110,6 @@
   ::-webkit-scrollbar-thumb {
     background: #888; /* thumb color */
   }
-
-
 }
 
 @layer utilities {
@@ -240,5 +238,39 @@
   .animate-section.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .projects-carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: max-content;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  .carousel-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-card {
+    flex: 0 0 auto; /* 🚨 CRITICAL */
+    width: 300px; /* 🚨 MUST exist */
+  }
+
+  .carousel-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .carousel-gradient-r {
+    @apply w-20 bg-gradient-to-r from-[hsl(var(--background))] to-transparent;
+  }
+
+   .carousel-gradient-l {
+    @apply w-20 bg-gradient-to-l from-[hsl(var(--background))] to-transparent;
   }
 }

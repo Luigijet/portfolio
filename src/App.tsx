@@ -1,8 +1,11 @@
 import useScrollReveal from "./hooks/useScrollReveal";
 import AboutMe from "@/components/sections/about-me";
 import Experience from "@/components/sections/experience";
+import Footer from "@/components/sections/footer";
+import Github from "@/components/sections/github";
 import Header from "@/components/sections/header";
 import Navbar from "@/components/sections/navbar";
+import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import GridPattern from "@/components/ui/grid-pattern";
 
@@ -18,7 +21,11 @@ function App() {
         <Header />
         <AboutMe />
         <Experience />
+        <Projects />
         <Skills />
+        <Github />
+
+        <Footer />
       </main>
     </div>
   );

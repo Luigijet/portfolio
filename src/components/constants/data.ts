@@ -6,18 +6,16 @@ export const ABOUT_ME = {
   description: [
     `Hey there! 👋 I'm Luigi Jet, a <span class="font-medium text-foreground">Front-End Developer</span> with <span class="font-medium text-foreground">3 years of experience</span> in fintech and web applications. 
 I specialize in building <span class="font-medium text-foreground">clean, scalable, and high-performance user interfaces</span> for production systems that people actually use.`,
-    // eslint-disable-next-line prettier/prettier
-    "Focused on <span class=\"font-medium text-foreground\">clean UI development</span> and <span class=\"font-medium text-foreground\">seamless REST API integration</span>.",
+    // eslint-disable-next-line quotes
+    'Focused on <span class="font-medium text-foreground">clean UI development</span> and <span class="font-medium text-foreground">seamless REST API integration</span>.',
   ],
 
-  profileImage: "/profile-image.webp",
+  profileImage: "/temp-image.png",
   profileGif: "/profile-gif.gif",
 };
 
 export const USER_NAMES = {
-  githubUsername: "your-github-username",
-  leetcodeUsername: "your-leetcode-username", // remove or keep blank if you don't have a LeetCode profile
-  hashnodeUsername: "your-hashnode-username", // remove or keep blank if you don't have a Hashnode profile
+  githubUsername: "Luigijet",
 };
 
 export const SOCIAL_LINKS = {
@@ -53,33 +51,32 @@ export const SKILLS = [
 
 export const PROJECTS = [
   {
-    name: "Project 1",
-    description: "Describe your project 1 here. Example: A web app for tracking habits.",
-    tech: ["React", "TypeScript"],
-    link: "https://yourproject1-link.com",
-    github: "https://github.com/yourusername/project1",
+    name: "Blue Sky Theme Park",
+    description:
+      "A modern ticket booking system that allows users to browse attractions, select ticket types, and complete reservations through a fast, responsive, and user-friendly interface.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Shadcn",
+      "Motion",
+      "Tailwind CSS",
+      "Redux",
+      "Zod",
+    ],
+    link: "https://tickets.blueskythemepark.ph",
+    github: null,
   },
-  {
-    name: "Project 2",
-    description: "Describe your project 2 here. Example: An e-commerce site for books.",
-    tech: ["Next.js", "Tailwind CSS"],
-    link: "https://yourproject2-link.com",
-    github: "https://github.com/yourusername/project2",
-  },
-  // Add more projects as needed
 ];
 
 export const EXPERIENCE = [
   {
     company: "Pisopay.com Inc",
     companyLink: "https://pisopay.com.ph/",
-    role: "Front-End Web Developer",
+    role: "Front-End Developer",
     period: "May 2022 - Present",
     location: "Makati City, Metro Manila",
     description: `
-      Built and maintained multiple web systems and landing pages, integrating payment channels and dynamic features using React, TypeScript, and Laravel Blade depending on project requirements. 
-      Translated Figma designs into production-ready React components, implemented responsive and reusable UI, and ensured cross-browser compatibility. 
-      Developed multi-tenant platforms with scalable and maintainable frontend architecture, collaborating with backend teams to deliver robust, dynamic user experiences.`,
+      Built and maintained multiple web systems and landing pages, integrating payment gateways and dynamic functionality using React, TypeScript, and Laravel Blade based on project requirements. Translated Figma designs into production-ready React components, implemented responsive and reusable UI patterns, and ensured cross-browser compatibility. Collaborated closely with backend teams to develop scalable and maintainable front-end architecture, delivering robust and engaging user experiences.`,
     skills: [
       "React",
       "TypeScript",
@@ -90,16 +87,15 @@ export const EXPERIENCE = [
       "Axios / Fetch",
       "GitLab / Version Control",
     ],
+    logo: "/pisopay.svg",
   },
 ];
 
 export const EDUCATION = [
   {
-    degree: "Your Degree (e.g., B.Tech. in Computer Science)",
-    institution: "Your University",
-    institutionLink: "https://youruniversity.com/",
-    period: "2020 - 2024",
-    score: "XX % or GPA",
+    degree: "Bachelor of Science in Information System",
+    institution: "Villagers Montessori College",
+    period: "2016 - 2021",
+    logo: "/vmc-logo.jpg",
   },
-  // Add more education as needed
 ];

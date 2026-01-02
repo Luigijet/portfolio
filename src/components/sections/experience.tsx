@@ -20,21 +20,36 @@ export default function Experience() {
             </span>
 
             <div className="space-y-3 pl-4">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                <div className="space-y-1">
-                  <h3 className="font-medium text-base">{exp.role}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    <a
-                      href={exp.companyLink || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="link"
-                    >
-                      {exp.company}
-                      <MdOutlineArrowOutward className="inline-block w-4 h-4 ml-1" />
-                    </a>
-                  </p>
+              <div className="flex gap-3 relative">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg border border-border overflow-hidden bg-white py-1">
+                    <img
+                      alt={exp.company}
+                      src={exp.logo}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
+                <div className="flex-1 min-w-0">
+                  <div className="space-y-1">
+                    <h3 className="font-medium text-base">{exp.role}</h3>
+                    <p className="text-sm text-muted-foreground">
+                      <a
+                        href={exp.companyLink || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link"
+                      >
+                        {exp.company}
+                        <MdOutlineArrowOutward className="inline-block w-4 h-4 ml-1" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col text-left sm:text-right sm:absolute sm:top-0 sm:right-0">
                 <div className="flex flex-col text-left sm:text-right">
                   <span className="text-sm text-muted-foreground font-mono">{exp.period}</span>
                   <span className="text-sm text-muted-foreground font-mono">{exp.location}</span>
