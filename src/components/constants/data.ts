@@ -23,10 +23,9 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/luigi-jet-andrada-71a865236/",
   instagram: "https://www.instagram.com/jet_0899/",
   email: "mailto:andradaluigijet@gmail.com",
-  resume: "#",
+  resume: "/resume.pdf",
 };
 
-// Contact form endpoint (update with your own Formspree endpoint)
 export const FORM_ENDPOINT = "https://formspree.io/f/mykzerag";
 
 export const SKILLS = [
