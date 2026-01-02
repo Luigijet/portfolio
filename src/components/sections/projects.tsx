@@ -9,7 +9,7 @@ const slides = ["/byb.png", "/spass.png", "/ms.png", "/byb.png", "/spass.png", "
 
 export default function Projects() {
   return (
-    <section className="animate-section">
+    <section className="animate-section" id="projects">
       <h2 className="text-xl font-semibold mb-4">featured projects.</h2>
       <Carousel slides={slides} speed={0.5} />
       <div className="space-y-8 mt-6">

@@ -159,7 +159,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="animate-section">
+    <section className="animate-section" id="contact">
       <h2 className="text-xl font-semibold mb-4">let&apos;s connect.</h2>
 
       <div className="space-y-4">
