@@ -9,6 +9,7 @@ import Navbar from "@/components/sections/navbar";
 import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import GridPattern from "@/components/ui/grid-pattern";
+import ScrollToTop from "@/components/ui/scroll-to-top";
 
 function App() {
   useScrollReveal();
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="font-sans min-h-screen flex flex-col items-center  relative">
       <GridPattern />
+      <ScrollToTop />
 
       <main className="relative z-10 max-w-3xl w-full mx-auto px-4 sm:px-6 md:px-8 pb-10">
         <Navbar />
