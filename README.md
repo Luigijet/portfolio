@@ -10,9 +10,7 @@ A personal portfolio website built with **React**, **TypeScript**, **Vite**, and
   - About Me
   - Skills
   - Projects
-  - Experience
-  - Education
-  - GitHub & LeetCode stats
+  - GitHub
   - Contact form
 
 ## 🛠 Tech Stack
