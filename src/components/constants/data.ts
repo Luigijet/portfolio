@@ -38,7 +38,6 @@ export const SKILLS = [
   "TailwindCSS",
   "Sass",
   "jQuery",
-  "VS Code",
   "Git",
   "GitHub",
   "GitLab",
