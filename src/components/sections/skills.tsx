@@ -92,11 +92,18 @@ const Skills = () => {
     <section className="animate-section" id="skills">
       <h2 className="text-xl font-semibold mb-4">technical skills.</h2>
       <div className="space-y-4">
-        <div className="flex flex-wrap gap-2">
-          {SKILLS.map((skill) => (
-            <SkillBadge key={skill} skill={skill} />
-          ))}
-        </div>
+        {Object.entries(SKILLS).map(([key, skills]) => (
+          <div key={key} className="space-y-2">
+            <h3 className="text-base font-mono font-medium text-muted-foreground">
+              {"< " + key + " />"}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {skills.map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
       <Divider />
     </section>

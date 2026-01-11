@@ -28,24 +28,34 @@ export const SOCIAL_LINKS = {
 
 export const FORM_ENDPOINT = "https://formspree.io/f/mykzerag";
 
-export const SKILLS = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Redux",
-  "TailwindCSS",
-  "Sass",
-  "jQuery",
-  "Git",
-  "GitHub",
-  "GitLab",
-  "Postman",
-  "Figma",
-  "Vite",
-  "Laravel",
-];
+
+export const SKILLS = {
+  frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Redux",
+    "TailwindCSS",
+    "jQuery",
+  ],
+  backend: ["Node.js", "Express.js"],
+  databases: ["MongoDB"],
+  languages: ["JavaScript", "TypeScript"],
+  tools: [
+    "VS Code",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Postman",
+    "Figma",
+    "Vite",
+    "Parcel",
+    "Jest",
+  ],
+};
 
 export const PROJECTS = [
   {
