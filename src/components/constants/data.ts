@@ -28,7 +28,6 @@ export const SOCIAL_LINKS = {
 
 export const FORM_ENDPOINT = "https://formspree.io/f/mykzerag";
 
-
 export const SKILLS = {
   frontend: [
     "HTML",
@@ -97,6 +96,14 @@ export const PROJECTS = [
     tech: ["Javascript", "Parcel", "Tailwind CSS"],
     link: "https://quizvm.netlify.app/",
     github: "https://github.com/Luigijet/quiz-app",
+  },
+  {
+    name: "Vegetable Store",
+    description:
+      "A lightweight full-stack web app for a vegetable store using Node.js and HTML/CSS, featuring product listings and detail pages.",
+    tech: ["Node.js", "CSS", "HTML"],
+    link: "https://vegy-store.onrender.com",
+    github: "https://github.com/Luigijet/vegetable-store",
   },
 ];
 
