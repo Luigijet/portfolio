@@ -10,7 +10,7 @@ I specialize in building <span class="font-medium text-foreground">clean, scalab
     'Focused on <span class="font-medium text-foreground">clean UI development</span> and <span class="font-medium text-foreground">seamless REST API integration</span>.',
   ],
 
-  profileImage: "/temp-image.png",
+  profileImage: "/profile.jpg",
   profileGif: "/profile-gif.gif",
 };
 
@@ -53,7 +53,15 @@ export const PROJECTS = [
     name: "Blue Sky Theme Park",
     description:
       "A modern ticket booking platform developed as part of a company project, enabling users to browse attractions, select ticket types, and complete reservations through a fast, responsive, and user-friendly interface.",
-    tech: ["React", "TypeScript", "Shadcn", "Motion", "Tailwind CSS", "Redux", "Zod"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Shadcn",
+      "Motion",
+      "Tailwind CSS",
+      "Redux",
+      "Zod",
+    ],
     link: "https://tickets.blueskythemepark.ph",
     github: null,
   },
@@ -72,6 +80,14 @@ export const PROJECTS = [
     tech: ["Javascript", "CSS", "Laravel"],
     link: null,
     github: null,
+  },
+  {
+    name: "QuizVM",
+    description:
+      "A lightweight quiz app built with the VMC architecture, bundled using Parcel, styled with Tailwind CSS, and powered by real-time data from the OpenTDB API.",
+    tech: ["Javascript", "Parcel", "Tailwind CSS"],
+    link: "https://quizvm.netlify.app/",
+    github: "https://github.com/Luigijet/quiz-app",
   },
 ];
 

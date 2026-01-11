@@ -9,12 +9,12 @@ const slides = ["/byb.png", "/spass.png", "/ms.png", "/byb.png", "/spass.png", "
 
 export default function Projects() {
   return (
-    <section className="animate-section" id="projects">
+    <section className="animate-section"  id="projects">
       <h2 className="text-xl font-semibold mb-4">featured projects.</h2>
       <Carousel slides={slides} speed={0.5} />
       <div className="space-y-8 mt-6">
         {PROJECTS.map((project) => (
-          <div key={project.name} className="relative">
+          <div key={project.name} className="relative animate-section">
             <div className="space-y-2 border-l-1 border-muted pl-4">
               <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col flex-1">
