@@ -23,7 +23,7 @@ export default function Navbar() {
         {/* Logo/Brand link
          */}
         <a href="/" className="text-lg font-semibold text-foreground">
-          Luigi.dev
+          jet.dev
         </a>
 
         {/* Desktop navigation menu */}
