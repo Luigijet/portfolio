@@ -23,7 +23,7 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/luigi-jet-andrada-71a865236/",
   instagram: "https://www.instagram.com/jet_0899/",
   email: "mailto:andradaluigijet@gmail.com",
-  resume: "/resume.pdf",
+  resume: "/Andrada-Resume.pdf",
 };
 
 export const FORM_ENDPOINT = "https://formspree.io/f/mykzerag";
